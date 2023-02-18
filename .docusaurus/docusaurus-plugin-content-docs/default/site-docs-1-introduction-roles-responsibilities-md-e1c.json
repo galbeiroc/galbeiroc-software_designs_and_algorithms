@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Introduction/roles-responsibilities",
+  "id": "Introduction/roles-responsibilities",
+  "title": "Roles and Responsibilities",
+  "description": "Mentee",
+  "source": "@site/docs/1-Introduction/roles-responsibilities.md",
+  "sourceDirName": "1-Introduction",
+  "slug": "/Introduction/roles-responsibilities",
+  "permalink": "/docs/Introduction/roles-responsibilities",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Necessary knowledge",
+    "permalink": "/docs/Introduction/necessary-knowledge"
+  },
+  "next": {
+    "title": "📍 Help",
+    "permalink": "/docs/Introduction/help"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Introduction/contribution",
+  "id": "Introduction/contribution",
+  "title": "How to contribute to the course",
+  "description": "You can become a contributor if you:",
+  "source": "@site/docs/1-Introduction/contribution.md",
+  "sourceDirName": "1-Introduction",
+  "slug": "/Introduction/contribution",
+  "permalink": "/docs/Introduction/contribution",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "📍 Help",
+    "permalink": "/docs/Introduction/help"
+  },
+  "next": {
+    "title": "Software Designs and Algorithms: Contents",
+    "permalink": "/docs/contents"
+  }
+}

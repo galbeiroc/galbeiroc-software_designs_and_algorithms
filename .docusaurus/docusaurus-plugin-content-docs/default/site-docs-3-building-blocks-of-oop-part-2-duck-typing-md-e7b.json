@@ -1,0 +1,26 @@
+{
+  "unversionedId": "building-blocks-of-oop-part-2/duck_typing",
+  "id": "building-blocks-of-oop-part-2/duck_typing",
+  "title": "2. Duck Typing",
+  "description": "Duck typing in computer programming is an application of the duck test — \"If it walks like a duck and it quacks like a duck, then it must be a duck\" — to determine whether an object can be used for a particular purpose.",
+  "source": "@site/docs/3-building-blocks-of-oop-part-2/duck_typing.md",
+  "sourceDirName": "3-building-blocks-of-oop-part-2",
+  "slug": "/building-blocks-of-oop-part-2/duck_typing",
+  "permalink": "/docs/building-blocks-of-oop-part-2/duck_typing",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "1. Composition",
+    "permalink": "/docs/building-blocks-of-oop-part-2/composition"
+  },
+  "next": {
+    "title": "3. Mixins",
+    "permalink": "/docs/building-blocks-of-oop-part-2/mixins"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "unversionedId": "Introduction/necessary-knowledge",
+  "id": "Introduction/necessary-knowledge",
+  "title": "Necessary knowledge",
+  "description": "Basic programming knowledge and understanding main principles and concepts of Front-End development. Participants must have basic knowledge in:",
+  "source": "@site/docs/1-Introduction/necessary-knowledge.md",
+  "sourceDirName": "1-Introduction",
+  "slug": "/Introduction/necessary-knowledge",
+  "permalink": "/docs/Introduction/necessary-knowledge",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Roles and Responsibilities",
+    "permalink": "/docs/Introduction/roles-responsibilities"
+  }
+}
