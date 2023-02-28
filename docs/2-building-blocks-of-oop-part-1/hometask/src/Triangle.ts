@@ -24,8 +24,8 @@ export class Triangle extends Shape {
       return "equilateral triangle";
     } if ((l1 === l2.toFixed()) || (l2 === l3) || (l1 === l3.toFixed())) {
       return "isosceles triangle";
+    } else {
+      return "scalene triangle";
     }
-
-    return "scalene triangle";
   }
 }

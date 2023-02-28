@@ -27,14 +27,12 @@ export class Point implements IPoint {
       const {x, y} = x2;
       tempValue = Math.sqrt(Math.pow((x - this.x), 2) + Math.pow((y - this.y), 2));
       return tempValue
-    }
-
-    if (typeof x2 === 'number' && typeof y2 === 'number') {
+    } else if (typeof x2 === 'number' && typeof y2 === 'number') {
       tempValue = Math.sqrt(Math.pow((x2-this.x), 2) + Math.pow((y2-this.y), 2));
       return tempValue;
+    } else {
+      tempValue = Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2));
+      return tempValue;
     }
-
-    tempValue = Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2));
-    return tempValue;
   }
 }
