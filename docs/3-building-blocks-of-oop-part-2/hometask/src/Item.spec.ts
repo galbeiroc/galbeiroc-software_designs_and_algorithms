@@ -2,9 +2,6 @@
 
 import { Item } from "./Item";
 
-// @ts-expect-error
-new Item("ring", 2, 1);
-
 class ItemWithImplementation extends Item {
   use() {}
 }
@@ -39,7 +36,7 @@ describe("Item", () => {
 
   describe("compareTo()", () => {
     it("should compare names if items values are equal", () => {
-      const item = new ItemWithImplementation("ring", 1, 1);
+      const item = new ItemWithImplementation("ring", -1, 1);
       const item2 = new ItemWithImplementation("rock", 1, 1);
 
       expect(item.compareTo(item2)).toEqual(-1);

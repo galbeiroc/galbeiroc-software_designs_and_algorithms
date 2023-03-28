@@ -1,11 +1,23 @@
-import Item from "./Item";
+import { Comparable } from "./Comparable";
+import { Item } from "./Item";
 
-abstract class Consumable<T> extends Item<T> {
-  isComsumed: boolean;
-  isPoiled: boolean;
+export abstract class Consumable<T extends Comparable<T>> extends Item<T> {
+  isConsumed: boolean = false;
+  isSpoiled: boolean;
 
-  constructor(name: string, value: number, weight: number, isPoiled: boolean) {
+  constructor(name: string, value: number, weight: number, isSpoiled: boolean) {
     super(name, value, weight);
-    this.isPoiled = isPoiled;
+    this.isSpoiled = isSpoiled;
+  }
+
+
+  use() {
+    if (this.isConsumed) {
+      return "There's nothing left of the bread to consume.";
+    } else if (this.isSpoiled) {
+      return "You consumed the bread.\nYou feel sick.";
+    } else {
+      return "You consumed the bread.";
+    }
   }
 }
