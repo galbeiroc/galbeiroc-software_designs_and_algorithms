@@ -6,7 +6,7 @@ export abstract class Weapon<T extends Comparable<T>> extends Item<T> {
   #baseDamage: number;
   damageModifier: number = 0;
   baseDurability: number;
-  #durabilityModifier: number = 0;
+  durabilityModifier: number = 0;
   checkDurability: number;
   #isBroken: boolean;
 
@@ -26,17 +26,16 @@ export abstract class Weapon<T extends Comparable<T>> extends Item<T> {
   getEffectiveDurability(): number;
   getEffectiveDurability(durabilityModifier?: number): number {
     if (durabilityModifier) {
-      this.#durabilityModifier = this.baseDurability + durabilityModifier;
+      this.durabilityModifier = this.baseDurability + durabilityModifier;
 
-      return +this.#durabilityModifier.toFixed(1);
+      return +this.durabilityModifier.toFixed(1);
     }
 
-    return this.baseDurability;
+    return this.baseDurability + this.durabilityModifier;
   }
 
   use() {
     this.checkDurability = this.getEffectiveDurability() - this.MODIFIER_CHANGE_RATE;
-
     if (!this.#isBroken) {
       if (this.checkDurability > 0) {
         return `You use the ${this.name}, dealing 0.05 points of damage.`;
@@ -44,6 +43,8 @@ export abstract class Weapon<T extends Comparable<T>> extends Item<T> {
         this.#isBroken = true;
         return `You use the ${this.name}, dealing 0.05 points of damage.\nThe ${this.name} breaks.`;
       }
+    } else {
+      throw new Error(`You can't use the ${this.name}, it is broken.`);
     }
   }
 

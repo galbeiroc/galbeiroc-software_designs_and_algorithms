@@ -3,9 +3,9 @@ import { Item } from "./Item";
 
 export abstract class Consumable<T extends Comparable<T>> extends Item<T> {
   isConsumed: boolean = false;
-  isSpoiled: boolean;
+  isSpoiled?: boolean;
 
-  constructor(name: string, value: number, weight: number, isSpoiled: boolean) {
+  constructor(name: string, value: number, weight: number, isSpoiled?: boolean) {
     super(name, value, weight);
     this.isSpoiled = isSpoiled;
   }
@@ -13,11 +13,11 @@ export abstract class Consumable<T extends Comparable<T>> extends Item<T> {
 
   use() {
     if (this.isConsumed) {
-      return "There's nothing left of the bread to consume.";
+      return `There's nothing left of the ${this.name} to consume.`;
     } else if (this.isSpoiled) {
-      return "You consumed the bread.\nYou feel sick.";
+      return `You consumed the ${this.name}.\nYou feel sick.`;
     } else {
-      return "You consumed the bread.";
+      return `You consumed the ${this.name}.`;
     }
   }
 }
